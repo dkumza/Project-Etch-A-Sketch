@@ -3,8 +3,8 @@
 */
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'College', sans-serif;
-    font-size: large;
+    font-family: 'Cantarell', sans-serif;
+    font-size: small;
   }
   /*
     2. Remove default margin

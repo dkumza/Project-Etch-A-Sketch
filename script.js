@@ -11,7 +11,7 @@ btn_4x4.addEventListener('click', () => {
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: purple;`;
+      grid_items.style.cssText = `background-color: #A3BE8C;`;
     })
   );
 });
@@ -22,7 +22,7 @@ btn_8x8.addEventListener('click', () => {
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: purple;`;
+      grid_items.style.cssText = `background-color: #EBCB8B;`;
     })
   );
 });
@@ -33,7 +33,7 @@ btn_16x16.addEventListener('click', () => {
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: purple;`;
+      grid_items.style.cssText = `background-color: #D08770;`;
     })
   );
 });
@@ -44,7 +44,7 @@ btn_32x32.addEventListener('click', () => {
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: purple;`;
+      grid_items.style.cssText = `background-color: #BF616A;`;
     })
   );
 });
@@ -61,7 +61,7 @@ btn_custom.addEventListener('click', () => {
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: purple;`;
+      grid_items.style.cssText = `background-color: #B48EAD;`;
     })
   );
 });
