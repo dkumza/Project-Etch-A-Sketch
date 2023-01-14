@@ -17,12 +17,17 @@ btn_4x4.addEventListener('click', () => {
 });
 
 // 8x8
+// still need find out how to chnage opacity of grid item, each time mouse enters this grid item...
 btn_8x8.addEventListener('click', () => {
   createGrid(8);
+  let backgroundColor = 'rgba(0, 0, 0, 0)';
+  let alpha = +backgroundColor.slice(-3, -1);
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: #EBCB8B;`;
+      console.log(alpha);
+      grid_items.style.cssText = `background-color: rgba(0, 0, 0, ${(alpha += 0.1)});`;
+      console.log(grid_items);
     })
   );
 });

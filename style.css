@@ -68,8 +68,8 @@
 
 #grid-cont {
   display: grid;
-  height: 480px;
-  width: 480px;    
+  height: 380px;
+  width: 380px;    
 }
 
 .grid-item {
@@ -84,6 +84,7 @@
 
 .btn-1 {
   min-width: 60px;
+  max-width: 60px;
   margin: 3px;
   margin-bottom: 10px;
 }
