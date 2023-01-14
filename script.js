@@ -54,14 +54,15 @@ btn_custom.addEventListener('click', () => {
   let nValue = prompt(
     `enter value (n (max value of n <= 100)) of squares per side for new grid*: `
   );
-  if (nValue > 100) {
-    nValue = prompt(`to prevent system "crash" enter n value <= 100!`);
+  if (nValue <= 100) {
+    createGrid(nValue);
+  } else {
+    alert(`n value is too big (n > 100), please try again!`);
   }
-  createGrid(nValue);
   const grid_items = document.querySelectorAll('div.grid-item');
   grid_items.forEach((grid_items) =>
     grid_items.addEventListener('mouseover', () => {
-      grid_items.style.cssText = `background-color: #B48EAD;`;
+      grid_items.style.cssText = `background-color: ${randomCssRgba()};`;
     })
   );
 });
@@ -88,3 +89,13 @@ function removeChildItems() {
     grid_cont.removeChild(grid_cont.firstChild);
   }
 }
+
+// create random color
+const randomNumber = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
+const randomByte = () => randomNumber(0, 255);
+const randomPercent = () => (randomNumber(50, 100) * 0.01).toFixed(2);
+const randomCssRgba = () =>
+  `rgba(${[randomByte(), randomByte(), randomByte(), randomPercent()].join(
+    ','
+  )})`;
