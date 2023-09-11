@@ -1,6 +1,6 @@
-## Project-Etch-A-Sketch
+# Project-Etch-A-Sketch
 
-# Created with:
+### Created with:
 - HTML
 - CSS
 - JavaScript
